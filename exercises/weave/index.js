@@ -30,6 +30,13 @@ function weave(sourceOne, sourceTwo) {
         queueThree.add(sourceOne.data[i])
         queueThree.add(sourceTwo.data[i])
     }
+
+    // let i = sourceOne.data.length - 1
+    // while (i >= 0) {
+    //     queueThree.add(sourceOne.data[i])
+    //     queueThree.add(sourceTwo.data[i])
+    //     i--
+    // }
     return queueThree
 }
 

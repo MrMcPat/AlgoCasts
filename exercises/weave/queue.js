@@ -6,15 +6,15 @@
 
 class Queue {
   constructor() {
-    this.data = [];
+    this.data = []
   }
 
   add(record) {
-    return this.data.unshift(record);
+    return this.data.unshift(record)
   }
 
   remove() {
-    return this.data.pop();
+    return this.data.pop()
   }
 
   peek() {

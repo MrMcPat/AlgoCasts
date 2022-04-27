@@ -35,6 +35,7 @@ function matrix(n) {
         results.push([])
     }
 
+    //first row
     for (let row = 0; row < n; row++) {
         if (row !== n) {
             count++
@@ -44,6 +45,7 @@ function matrix(n) {
         }
     }
 
+    //last column
     for (let column = 1; column < n; column++) {
         if (column !== n) {
             count++
@@ -53,6 +55,7 @@ function matrix(n) {
         }
     }
 
+    //bottom row
     for (let row = n - 1; row > 0; row--) {
         if (row !== -1) {
             count++
@@ -62,6 +65,7 @@ function matrix(n) {
         }
     }
 
+    //first column
     for (let column = n - 2; column > 0; column--) {
         if (column !== 0) {
             count++
@@ -71,6 +75,7 @@ function matrix(n) {
         }
     }
 
+    //next row
     for (let row = 1; row < n; row++) {
         if (row !== n - 1) {
             count++
@@ -97,7 +102,7 @@ function matrix(n) {
             break;
         }
     }
-
+    // console.log(results)
     return results
 }
 

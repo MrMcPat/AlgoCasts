@@ -8,6 +8,20 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
-class Queue {}
+class Queue {
+    constructor() {
+        this.data = []
+    }
+
+    add(record) {
+        return this.data.unshift(record)
+    }
+
+    remove(record) {
+        return this.data.pop()
+    }
+}
+
+const q = new Queue
 
 module.exports = Queue;
